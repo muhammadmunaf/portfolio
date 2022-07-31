@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="Images/favicon.png" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="styles.css" />
+
+        <title>Services</title>
+    </head>
+    <body>
+        <nav id="desktop">
+            <div class="leftSideNav">
+                <a href="index.html"><img src="Images/logo.jpg" alt="" /></a>
+                <div class="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="services.html" class="active">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="rightSideNav">
+                <a href="https://www.behance.net/mmunaf" target="_blank"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Behance -Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://dribbble.com/mmunaf" target="_blank"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Dribbble - Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://www.linkedin.com/in/mmunaf/" target="_blank"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/LinkedIn - Original.svg"
+                        alt=""
+                /></a>
+            </div>
+        </nav>
+
+        <nav id="mobile">
+            <a href="index.html"
+                ><img
+                    src="Images/logo.jpg"
+                    alt=""
+                    width="32px"
+                    style="border-radius: 100%"
+            /></a>
+            <img
+                src="Icons/menu.svg"
+                alt="hamburger icon"
+                id="navExpandBtn"
+                onclick="navMenuControl()"
+            />
+        </nav>
+        <div class="mobileNavBtns" id="mobileNavOptions">
+            <div class="navLinksMobile">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="socialsMobileTop">
+                <a href="https://www.behance.net/mmunaf" target="_blank"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Behance -Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://dribbble.com/mmunaf" target="_blank"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Dribbble - Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://www.linkedin.com/in/mmunaf/" target="_blank"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/LinkedIn - Original.svg"
+                        alt=""
+                /></a>
+            </div>
+        </div>
+
+        <section id="servicesHeading" data-aos="fade-up">
+            <p class="smallCaps" style="color: #ffffff">Services</p>
+            <p class="mainHeadingText">
+                I create digital products & services that <br />
+                WoW, engage and delight.
+            </p>
+        </section>
+
+        <section id="servicesDetails" data-aos="fade-up">
+            <div class="servicesBoxDetail">
+                <img
+                    src="Images/strategy.png"
+                    alt=""
+                    style="height: 540px"
+                    data-aos="fade-up"
+                />
+                <div class="container" data-aos="fade-up">
+                    <p class="servicesHeadingText">Strategy</p>
+                    <p class="serviceContentText">
+                        In my strategy process, I analyze customer needs,
+                        identify general product problems and advise on
+                        important future decisions.
+                    </p>
+                    <p class="serviceDetailsList">
+                        - Market Research <br />
+                        - Competitive Analysis <br />
+                        - Prototyping <br />
+                        - Information Architecture
+                    </p>
+                </div>
+            </div>
+            <div class="servicesBoxDetail">
+                <img
+                    src="Images/design1.png"
+                    alt=""
+                    style="order: 2; height: 540px"
+                    data-aos="fade-up"
+                />
+                <div class="container" data-aos="fade-up">
+                    <p class="servicesHeadingText">Design</p>
+                    <p class="serviceContentText">
+                        My design process is about making complex solutions,
+                        simple. I combine thoughtful user experience with a
+                        clear visual identity.
+                    </p>
+                    <p class="serviceDetailsList">
+                        - User Interface Design <br />
+                        - User Experience Design <br />
+                        - Motion Design & Animations <br />
+                        - Branding<br />
+                        - Prototyping
+                    </p>
+                </div>
+            </div>
+            <div class="servicesBoxDetail">
+                <img
+                    src="Images/dev1.png"
+                    alt=""
+                    style="height: 540px"
+                    data-aos="fade-up"
+                />
+                <div class="container" data-aos="fade-up">
+                    <p class="servicesHeadingText">Development</p>
+                    <p class="serviceContentText">
+                        I bring products to life using latest technologies while
+                        focusing on a perfect visual output through clean and
+                        maintainable code.
+                    </p>
+                    <p class="serviceDetailsList">
+                        - Landing Pages Development <br />
+                        - Front-end Development <br />
+                        - HTML, CSS, JS<br />
+                        - React JS
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="servicesDetails">
+            <div class="servicesBoxDetailed mobileDesign">
+                <div class="servicesBoxDetailedContent">
+                    <p class="servicesHeadingText">Mobile Design</p>
+                    <p class="serviceContentText">
+                        Morbi sed mi nec ipsum mollis tempus. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit. In hac habitasse
+                        platea dictumst.
+                    </p>
+                    <p class="serviceDetailsList">
+                        Research<br />UI/UX Design<br />Prototyping<br />Information
+                        Architecture
+                    </p>
+                </div>
+                <img src="Images/mobile_design_service.png" alt="" />
+            </div>
+
+            <div class="servicesBoxDetailed webDesign">
+                <div class="servicesBoxDetailedContent">
+                    <p class="servicesHeadingText">Web Design</p>
+                    <p class="serviceContentText">
+                        Morbi sed mi nec ipsum mollis tempus. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit. In hac habitasse
+                        platea dictumst.
+                    </p>
+                    <p class="serviceDetailsList">
+                        Research<br />UI/UX Design<br />Prototyping<br />Information
+                        Architecture <br />Responsive
+                    </p>
+                </div>
+                <img src="Images/web_design_service.png" alt="" />
+            </div>
+
+            <div class="servicesBoxDetailed webDevel">
+                <div class="servicesBoxDetailedContent">
+                    <p class="servicesHeadingText">Web development</p>
+                    <p class="serviceContentText">
+                        Morbi sed mi nec ipsum mollis tempus. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit. In hac habitasse
+                        platea dictumst.
+                    </p>
+                    <p class="serviceDetailsList">
+                        Landing Pages <br />Business Pages <br />brResponsive
+                    </p>
+                </div>
+                <img src="Images/web_devel_service.png" alt="" />
+            </div>
+        </section> -->
+
+        <section id="contact">
+            <p class="contactTitle" data-aos="fade-up">Let's work together!</p>
+            <div class="contactOuterContainer">
+                <div
+                    class="contactInfo"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                >
+                    <p class="smallCaps">Connect</p>
+                    <p class="contactInfoContent">info@gmail.com</p>
+                    <p class="contactInfoContent">+92 315 7600100</p>
+                    <!-- <div class="whatsappContact">
+                        <img src="Images/Blank.jpg" alt="QR code" />
+                        <p class="contactInfoContent">Whatsapp QR</p>
+                    </div> -->
+                </div>
+                <div
+                    class="contactForm"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                >
+                    <form
+                        action="https://formspree.io/f/xlezjwrj"
+                        method="POST"
+                    >
+                        <div class="row">
+                            <input
+                                type="text"
+                                placeholder="Name"
+                                style="margin-right: 20px"
+                                name="name"
+                            />
+                            <input
+                                type="email"
+                                placeholder="Email"
+                                name="_replyto"
+                            />
+                        </div>
+                        <textarea
+                            name="message"
+                            placeholder="Project Details"
+                            cols="10"
+                            rows="10"
+                        ></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="horizontalLine" style="background-color: #333b3d">
+                <hr style="color: #ffffff" />
+            </div>
+
+            <div class="footerContent">
+                <p>Copyright 2021, Munaf</p>
+                <div class="socialsFooter">
+                    <a href="https://www.behance.net/mmunaf"
+                        ><img
+                            class="socialIconTop"
+                            src="Icons/Behance -Original.svg"
+                            alt=""
+                    /></a>
+                    <a href="https://dribbble.com/mmunaf"
+                        ><img
+                            class="socialIconTop"
+                            src="Icons/Dribbble - Original.svg"
+                            alt=""
+                    /></a>
+                    <a href="https://www.linkedin.com/in/mmunaf/"
+                        ><img
+                            class="socialIconTop"
+                            src="Icons/LinkedIn - Original.svg"
+                            alt=""
+                    /></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

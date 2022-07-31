@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="Images/favicon.png" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="styles.css" />
+
+        <title>Projects</title>
+    </head>
+    <body>
+        <nav id="desktop">
+            <div class="leftSideNav">
+                <a href="index.html"><img src="Images/logo.jpg" alt="" /></a>
+                <div class="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="#" class="active">Projects</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="rightSideNav">
+                <a href="https://www.behance.net/mmunaf" target="_blank"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Behance -Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://dribbble.com/mmunaf" target="_blank"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Dribbble - Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://www.linkedin.com/in/mmunaf/" target="_blank"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/LinkedIn - Original.svg"
+                        alt=""
+                /></a>
+            </div>
+        </nav>
+
+        <nav id="mobile">
+            <a href="index.html"
+                ><img
+                    src="Images/logo.jpg"
+                    alt=""
+                    width="32px"
+                    style="border-radius: 100%"
+            /></a>
+            <img
+                src="Icons/menu.svg"
+                alt="hamburger icon"
+                id="navExpandBtn"
+                onclick="navMenuControl()"
+            />
+        </nav>
+        <div class="mobileNavBtns" id="mobileNavOptions">
+            <div class="navLinksMobile">
+                <a href="index.html">Home</a>
+                <a href="#" class="active">Projects</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="socialsMobileTop">
+                <a href="https://www.behance.net/mmunaf" target="_blank"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Behance -Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://dribbble.com/mmunaf" target="_blank"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Dribbble - Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://www.linkedin.com/in/mmunaf/" target="_blank"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/LinkedIn - Original.svg"
+                        alt=""
+                /></a>
+            </div>
+        </div>
+
+        <section id="servicesHeading" data-aos="fade-up">
+            <p class="smallCaps" style="color: #ffffff">projects</p>
+            <p class="mainHeadingText">
+                Aliquam sit amet augue vel neque tincidunt lobortis a id purus.
+            </p>
+        </section>
+
+        <section
+            id="projectDetails"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="100"
+            data-aos-duration="600"
+        >
+            <div class="projectCatSelector">
+                <div class="catBtn current" onclick="openTab(event, 'Mobile')">
+                    <p class="catBtnText">Mobile Apps</p>
+                </div>
+                <div class="catBtn" onclick="openTab(event, 'Webapps')">
+                    <p class="catBtnText">Web Apps</p>
+                </div>
+                <div class="catBtn" onclick="openTab(event, 'Websites')">
+                    <p class="catBtnText">Websites</p>
+                </div>
+            </div>
+
+            <div class="projectCatMobileSelector">
+                <select>
+                    <option value="" onclick="openTab(event, 'Mobile')">
+                        Mobile Apps
+                    </option>
+                    <option value="" onclick="openTab(event, 'Webapps')">
+                        Web Apps
+                    </option>
+                    <option value="" onclick="openTab(event, 'Websites')">
+                        Websites
+                    </option>
+                </select>
+            </div>
+
+            <div
+                class="projects tabcontent"
+                id="Mobile"
+                data-aos="fade-up"
+                data-aos-offset="100"
+                data-aos-delay="200"
+            >
+                <div class="col">
+                    <div
+                        class="projectTemplateNew"
+                        style="position: relative"
+                        onclick="window.open(
+                    'https://www.behance.net/gallery/135357335/CookEasy-UX-Case-Study',
+                    '_blank' // <- This is what makes it open in a new window.
+                  );"
+                    >
+                        <img
+                            src="Images/Projects/Cookeasy3.png"
+                            class="projectTemplatePicture"
+                            style="background-color: #1d1d1d"
+                        />
+                        <div class="projectTemplateWritten">
+                            <p
+                                class="projectTemplateTitle"
+                                style="color: white"
+                            >
+                                CookEasy
+                            </p>
+                            <p
+                                class="projectTemplateSubText"
+                                style="color: white"
+                            >
+                                A cooking app that lets users decide what to
+                                cook and manage their groceries
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="projectTemplateNew" style="position: relative">
+                        <img
+                            src="Images/Projects/Medi.png"
+                            class="projectTemplatePicture"
+                            style="background-color: #f5f5f5"
+                        />
+                        <div class="projectTemplateWritten">
+                            <p class="projectTemplateTitle">Medi</p>
+                            <p class="projectTemplateSubText">
+                                A medical App to help users find health centers
+                                near them with pricing
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="projectTemplateNew" style="position: relative">
+                        <img
+                            src="Images/Projects/InstaLearn1.png"
+                            class="projectTemplatePicture"
+                            style="background-color: #f9f9f9"
+                        />
+                        <div class="projectTemplateWritten">
+                            <p class="projectTemplateTitle">InstaLearn</p>
+                            <p class="projectTemplateSubText">
+                                An educational app to easily and effectively
+                                learn new skills
+                            </p>
+                        </div>
+                    </div>
+                    <div class="projectTemplateNew" style="position: relative">
+                        <img
+                            src="Images/Projects/MyMun1.png"
+                            class="projectTemplatePicture"
+                            style="background-color: #f4f4f4"
+                        />
+                        <div class="projectTemplateWritten">
+                            <p class="projectTemplateTitle">My Municipality</p>
+                            <p class="projectTemplateSubText">
+                                A citizen portal for people to report issues
+                                around them <br />
+                                for the govt to fix
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="projects tabcontent"
+                id="Webapps"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="200"
+                data-aos-duration="800"
+            >
+                <div class="col">
+                    <div
+                        class="projectTemplateNew"
+                        style="position: relative"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                        onclick="window.open(
+                    'https://www.behance.net/gallery/140178639/Redesigning-a-Student-Portal-Figma',
+                    '_blank' // <- This is what makes it open in a new window.
+                  );"
+                    >
+                        <img
+                            src="Images/Projects/Flex2.png"
+                            class="projectTemplatePicture"
+                            style="background-color: #f5f5f5"
+                        />
+                        <div class="projectTemplateWritten">
+                            <p class="projectTemplateTitle">Flex</p>
+                            <p class="projectTemplateSubText">
+                                A student portal
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div
+                        class="projectTemplateNew"
+                        style="position: relative"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                    >
+                        <img
+                            src="Images/Projects/LinkX.png"
+                            class="projectTemplatePicture"
+                            style="background-color: #1d1d1d"
+                        />
+                        <div class="projectTemplateWritten">
+                            <p
+                                class="projectTemplateTitle"
+                                style="color: white"
+                            >
+                                LinkX
+                            </p>
+                            <p
+                                class="projectTemplateSubText"
+                                style="color: white"
+                            >
+                                A productivity web app focused on reducing the
+                                time it <br />
+                                takes to go to links
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="projects tabcontent"
+                id="Websites"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="200"
+                data-aos-duration="800"
+            >
+                <div class="col">
+                    <div
+                        class="projectTemplateNew"
+                        style="position: relative"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                        onclick="window.open(
+                    'https://www.behance.net/gallery/128820167/Python-Developer-Website-Design',
+                    '_blank' // <- This is what makes it open in a new window.
+                  );"
+                    >
+                        <img
+                            src="Images/Projects/aden1.png"
+                            class="projectTemplatePicture"
+                            style="background-color: #f5f5f5"
+                        />
+                        <div class="projectTemplateWritten">
+                            <p class="projectTemplateTitle">Aden</p>
+                            <p class="projectTemplateSubText">
+                                Portfolio website of a python developer
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="projectTemplateNew"
+                        data-aos="fade-up"
+                        style="position: relative"
+                    >
+                        <img
+                            src="Images/Projects/CrustPlay1.png"
+                            class="projectTemplatePicture"
+                            style="background-color: #1d1d1d"
+                        />
+                        <div class="projectTemplateWritten">
+                            <p
+                                class="projectTemplateTitle"
+                                style="color: white"
+                            >
+                                CrustPlay
+                            </p>
+                            <p
+                                class="projectTemplateSubText"
+                                style="color: white"
+                            >
+                                Landing page of a gaming platform
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div
+                        class="projectTemplateNew"
+                        style="position: relative"
+                        data-aos="fade-up"
+                    >
+                        <img
+                            src="Images/Projects/CyberWebsite1.png"
+                            class="projectTemplatePicture"
+                            style="background-color: #1d1d1d"
+                        />
+                        <div class="projectTemplateWritten">
+                            <p
+                                class="projectTemplateTitle"
+                                style="color: white"
+                            >
+                                TechOwl
+                            </p>
+                            <p
+                                class="projectTemplateSubText"
+                                style="color: white"
+                            >
+                                Landing page for a cyber security firm TechOwl
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="projectTemplateNew"
+                        style="position: relative"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+                        <img
+                            src="Images/Projects/daastan1.png"
+                            class="projectTemplatePicture"
+                            style="background-color: #f5f5f5"
+                        />
+                        <div class="projectTemplateWritten">
+                            <p class="projectTemplateTitle">Daastan</p>
+                            <p class="projectTemplateSubText">
+                                Landing page + online store of a book publishing
+                                company
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <p class="contactTitle">Let's work together!</p>
+            <div class="contactOuterContainer">
+                <div class="contactInfo">
+                    <p class="smallCaps">Connect</p>
+                    <p class="contactInfoContent">info@gmail.com</p>
+                    <p class="contactInfoContent">+92 315 7600100</p>
+                    <!-- <div class="whatsappContact">
+                        <img src="Images/Blank.jpg" alt="QR code" />
+                        <p class="contactInfoContent">Whatsapp QR</p>
+                    </div> -->
+                </div>
+                <div class="contactForm">
+                    <form
+                        action="https://formspree.io/f/xlezjwrj"
+                        method="POST"
+                    >
+                        <div class="row">
+                            <input
+                                type="text"
+                                placeholder="Name"
+                                style="margin-right: 20px"
+                                name="name"
+                            />
+                            <input
+                                type="email"
+                                placeholder="Email"
+                                name="_replyto"
+                            />
+                        </div>
+                        <textarea
+                            name="message"
+                            placeholder="Project Details"
+                            cols="10"
+                            rows="10"
+                        ></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="horizontalLine" style="background-color: #333b3d">
+                <hr style="color: #ffffff" />
+            </div>
+
+            <div class="footerContent">
+                <p>Copyright 2021, Munaf</p>
+                <div class="socialsFooter">
+                    <a href="https://www.behance.net/mmunaf"
+                        ><img
+                            class="socialIconTop"
+                            src="Icons/Behance -Original.svg"
+                            alt=""
+                    /></a>
+                    <a href="https://dribbble.com/mmunaf"
+                        ><img
+                            class="socialIconTop"
+                            src="Icons/Dribbble - Original.svg"
+                            alt=""
+                    /></a>
+                    <a href="https://www.linkedin.com/in/mmunaf/"
+                        ><img
+                            class="socialIconTop"
+                            src="Icons/LinkedIn - Original.svg"
+                            alt=""
+                    /></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="script.js"></script>
+        <script>
+            tabcontent = document.getElementsByClassName("projects tabcontent");
+            tabcontent[1].style.display = "none";
+            tabcontent[2].style.display = "none";
+
+            function navMenuControl() {
+                if (
+                    document.getElementById("mobileNavOptions").style.display ==
+                    "none"
+                ) {
+                    document.getElementById("mobileNavOptions").style.display =
+                        "flex";
+                    document
+                        .getElementById("navExpandBtn")
+                        .setAttribute("src", "Icons/cross.svg");
+                } else {
+                    document.getElementById("mobileNavOptions").style.display =
+                        "none";
+                    document
+                        .getElementById("navExpandBtn")
+                        .setAttribute("src", "Icons/menu.svg");
+                }
+            }
+
+            function openTab(evt, tabName) {
+                // Declare all variables
+                var i, tabcontent, tablinks;
+
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName(
+                    "projects tabcontent"
+                );
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("catBtn");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(
+                        " current",
+                        ""
+                    );
+                }
+
+                // Show the current tab, and add an "active" class to the button that opened the tab
+                document.getElementById(tabName).style.display = "flex";
+                evt.currentTarget.className += " current";
+            }
+        </script>
+    </body>
+</html>

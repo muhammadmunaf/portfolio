@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="Images/favicon.png" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="styles.css" />
+
+        <title>Home</title>
+    </head>
+    <body>
+        <nav id="desktop">
+            <div class="leftSideNav">
+                <a href="index.html"><img src="Images/logo.jpg" alt="" /></a>
+                <div class="navLinks">
+                    <a href="#" class="active">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="rightSideNav">
+                <a href="https://www.behance.net/mmunaf" target="_blank"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Behance -Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://dribbble.com/mmunaf" target="_blank"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Dribbble - Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://www.linkedin.com/in/mmunaf/" target="_blank"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/LinkedIn - Original.svg"
+                        alt=""
+                /></a>
+            </div>
+        </nav>
+
+        <nav id="mobile">
+            <a href="index.html"
+                ><img
+                    src="Images/logo.jpg"
+                    alt=""
+                    width="32px"
+                    style="border-radius: 100%"
+            /></a>
+            <img
+                src="Icons/menu.svg"
+                alt="hamburger icon"
+                id="navExpandBtn"
+                onclick="navMenuControl()"
+            />
+        </nav>
+        <div class="mobileNavBtns" id="mobileNavOptions">
+            <div class="navLinksMobile">
+                <a href="index.html" class="active">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="socialsMobileTop">
+                <a href="https://www.behance.net/mmunaf" target="_blank"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Behance -Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://dribbble.com/mmunaf" target="_blank"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Dribbble - Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://www.linkedin.com/in/mmunaf/" target="_blank"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/LinkedIn - Original.svg"
+                        alt=""
+                /></a>
+            </div>
+        </div>
+
+        <section id="hero" data-aos="fade-up">
+            <div class="heroContent" style="margin-top: 80px">
+                <!-- <p class="smallCaps" style="color: #ffffff">Hi, i am munaf</p> -->
+
+                <!-- <div class="content smallCaps">
+                    <div class="content__container">
+                        <p
+                            class="content__container__text smallCaps"
+                            style="color: #ffffff"
+                        >
+                            Hello
+                        </p>
+
+                        <ul
+                            class="content__container__list"
+                            style="color: #ffffff"
+                        >
+                            <li
+                                class="content__container__list__item smallCaps"
+                            >
+                                world !
+                            </li>
+                            <li
+                                class="content__container__list__item smallCaps"
+                            >
+                                bob !
+                            </li>
+                            <li
+                                class="content__container__list__item smallCaps"
+                            >
+                                users !
+                            </li>
+                            <li
+                                class="content__container__list__item smallCaps"
+                            >
+                                everybody !
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <div class="console-container" style="margin-bottom: 24px">
+                    <span class="smallCaps" id="intro1" style="display: none"
+                        >Hi, I am</span
+                    >
+                    <span class="smallCaps" id="intro2">Hi, I am a</span>
+                    <span id="text" class="smallCaps"></span>
+                    <div class="console-underscore smallCaps" id="console">
+                        &#95;
+                    </div>
+                </div>
+
+                <p class="mainHeadingText">
+                    I build custom product applications <br />
+                    and websites for startups and small <br />
+                    businesses that rock!
+                </p>
+                <div
+                    class="heroBtns"
+                    data-aos="fade-up"
+                    data-aos-offset="50"
+                    data-aos-delay="100"
+                    data-aos-duration="800"
+                    style="margin-top: 40px"
+                >
+                    <!-- <a id="downloadProjectBtn" href="#contact">Get in Touch</a> -->
+                    <a id="downloadProjectBtn" href="Resume.pdf" target="_blank"
+                        >Resume</a
+                    >
+                    <a id="getInContactBtn" href="#myProjects"
+                        >View Projects
+                        <img
+                            src="Icons/arrow-right.svg"
+                            alt="right arrow"
+                            style="margin-left: 6px"
+                    /></a>
+                </div>
+            </div>
+            <img src="Images/hero_img.png" alt="" class="heroPic" />
+        </section>
+
+        <section id="myGoal">
+            <img src="Images/my_goal_img.png" alt="" data-aos="fade-right" />
+            <div class="myGoalContent" data-aos="fade-left">
+                <p class="smallCaps">My goal</p>
+                <p class="bodyText">
+                    I create websites, webapps and mobile apps that helps users
+                    solve their problems efficiently and effectively. The main
+                    goal is always to prioritize the user and secondary help my
+                    clients grow their revenue and get the best possible
+                    product!
+                </p>
+            </div>
+        </section>
+
+        <div class="horizontalLine">
+            <hr />
+        </div>
+
+        <section id="myProjects">
+            <div class="myProjectsContent" data-aos="fade-up">
+                <p class="smallCaps">Projects</p>
+                <p class="bodyText">
+                    Wide range from websites, webapps to mobile apps, each of
+                    them unique and successful in their own way.
+                </p>
+            </div>
+
+            <div
+                class="projects"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="200"
+                data-aos-duration="800"
+            >
+                <div class="col">
+                    <div
+                        class="projectTemplateNew"
+                        style="position: relative"
+                        data-aos="fade-up"
+                        onclick="window.open(
+                    'https://www.behance.net/gallery/135357335/CookEasy-UX-Case-Study',
+                    '_blank' // <- This is what makes it open in a new window.
+                  );"
+                    >
+                        <img
+                            src="Images/Projects/Cookeasy3.png"
+                            class="projectTemplatePicture"
+                            style="background-color: #1d1d1d"
+                        />
+                        <div class="projectTemplateWritten">
+                            <p
+                                class="projectTemplateTitle"
+                                style="color: white"
+                            >
+                                CookEasy
+                            </p>
+                            <p
+                                class="projectTemplateSubText"
+                                style="color: white"
+                            >
+                                A cooking app that lets users decide what to
+                                cook and manage their groceries
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="projectTemplateNew"
+                        style="position: relative"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                        onclick="window.open(
+                    'https://www.behance.net/gallery/140178639/Redesigning-a-Student-Portal-Figma',
+                    '_blank' // <- This is what makes it open in a new window.
+                  );"
+                    >
+                        <img
+                            src="Images/Projects/Flex2.png"
+                            class="projectTemplatePicture"
+                            style="background-color: #f5f5f5"
+                        />
+                        <div class="projectTemplateWritten">
+                            <p class="projectTemplateTitle">Flex</p>
+                            <p class="projectTemplateSubText">
+                                A student portal
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div
+                        class="projectTemplateNew"
+                        style="position: relative"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                        onclick="window.open(
+                    'https://www.behance.net/gallery/128820167/Python-Developer-Website-Design',
+                    '_blank' // <- This is what makes it open in a new window.
+                  );"
+                    >
+                        <img
+                            src="Images/Projects/aden1.png"
+                            class="projectTemplatePicture"
+                            style="background-color: #f5f5f5"
+                        />
+                        <div class="projectTemplateWritten">
+                            <p class="projectTemplateTitle">Aden</p>
+                            <p class="projectTemplateSubText">
+                                Portfolio website of a python developer
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="projectTemplateNew"
+                        data-aos="fade-up"
+                        style="position: relative"
+                        onclick="window.open(
+                    'https://www.crustplay.com',
+                    '_blank' // <- This is what makes it open in a new window.
+                  );"
+                    >
+                        <img
+                            src="Images/Projects/CrustPlay1.png"
+                            class="projectTemplatePicture"
+                            style="background-color: #1d1d1d"
+                        />
+                        <div class="projectTemplateWritten">
+                            <p
+                                class="projectTemplateTitle"
+                                style="color: white"
+                            >
+                                CrustPlay
+                            </p>
+                            <p
+                                class="projectTemplateSubText"
+                                style="color: white"
+                            >
+                                Landing page of a gaming platform
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a
+                class="seeAllProjectsBtn"
+                href="projects.html"
+                data-aos="fade-up"
+                data-aos-offset="0"
+                style="margin-top: 40px"
+                >See all projects <img src="Icons/arrow-right.svg" alt=""
+            /></a>
+        </section>
+
+        <section id="services">
+            <p class="smallCaps" data-aos="fade-up">Services</p>
+            <p class="bodyText" data-aos="fade-up">
+                I create digital products & services that WoW, engage and
+                delight
+            </p>
+
+            <div
+                class="servicesContainer"
+                data-aos="fade-up"
+                data-aos-delay="200"
+            >
+                <div class="servicesB">
+                    <h3 class="bodyText">Strategy</h3>
+                    <p>
+                        In my strategy process, I analyze customer needs,
+                        identify general product problems and advise on
+                        important future decisions.
+                    </p>
+                </div>
+                <div class="servicesB">
+                    <h3 class="bodyText">Design</h3>
+                    <p>
+                        My design process is about making complex solutions,
+                        simple. I combine thoughtful user experience with a
+                        clear visual identity.
+                    </p>
+                </div>
+                <div class="servicesB">
+                    <h3 class="bodyText">Development</h3>
+                    <p>
+                        I bring products to life using latest technologies while
+                        focusing on a perfect visual output through clean and
+                        maintainable code.
+                    </p>
+                </div>
+            </div>
+            <div
+                style="
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    margin-top: 46px;
+                "
+                data-aos="fade-up"
+                data-aos-delay="200"
+            >
+                <a id="exploreServicesBtn" href="services.html"
+                    >Explore Services</a
+                >
+            </div>
+        </section>
+
+        <div class="horizontalLine" style="background-color: #333b3d">
+            <hr style="color: #ffffff" />
+        </div>
+
+        <section id="about">
+            <img
+                src="Images/profile-pic.png"
+                alt=""
+                data-aos="fade-right"
+                width="280px"
+            />
+            <div class="aboutContent" data-aos="fade-left">
+                <p class="smallCaps">About</p>
+                <p class="bodyText">
+                    I'm a UI/UX Designer and Developer based in Islamabad,
+                    Pakistan. I love solving problems by simplying complex
+                    problems and combining insightful reserach with intutive
+                    design.
+                    <!-- I enjoy every stage of creating digital products
+                    that are wanted by users, easy to use but also visually top
+                    notch. -->
+                </p>
+            </div>
+        </section>
+
+        <div class="horizontalLine" style="background-color: #333b3d">
+            <hr style="color: #ffffff" />
+        </div>
+
+        <section id="contact">
+            <p class="contactTitle" data-aos="fade-up">Let's work together!</p>
+            <div class="contactOuterContainer">
+                <div
+                    class="contactInfo"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                >
+                    <p class="smallCaps">Connect</p>
+                    <p class="contactInfoContent">info@gmail.com</p>
+                    <p class="contactInfoContent">+92 315 7600100</p>
+                    <!-- <div class="whatsappContact">
+                        <img src="Images/Blank.jpg" alt="QR code" />
+                        <p class="contactInfoContent">Whatsapp QR</p>
+                    </div> -->
+                </div>
+                <div
+                    class="contactForm"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                >
+                    <form
+                        action="https://formspree.io/f/xlezjwrj"
+                        method="POST"
+                    >
+                        <div class="row">
+                            <input
+                                type="text"
+                                placeholder="Name"
+                                style="margin-right: 20px"
+                                name="name"
+                            />
+                            <input
+                                type="email"
+                                placeholder="Email"
+                                name="_replyto"
+                            />
+                        </div>
+                        <textarea
+                            name="message"
+                            placeholder="Project Details"
+                            cols="10"
+                            rows="10"
+                        ></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="horizontalLine" style="background-color: #333b3d">
+                <hr style="color: #ffffff" />
+            </div>
+
+            <div class="footerContent">
+                <p>© 2022 mmunaf - All rights Reserved</p>
+                <div class="socialsFooter">
+                    <a href="https://www.behance.net/mmunaf"
+                        ><img
+                            class="socialIconTop"
+                            src="Icons/Behance -Original.svg"
+                            alt=""
+                    /></a>
+                    <a href="https://dribbble.com/mmunaf"
+                        ><img
+                            class="socialIconTop"
+                            src="Icons/Dribbble - Original.svg"
+                            alt=""
+                    /></a>
+                    <a href="https://www.linkedin.com/in/mmunaf/"
+                        ><img
+                            class="socialIconTop"
+                            src="Icons/LinkedIn - Original.svg"
+                            alt=""
+                    /></a>
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="script.js"></script>
+        <script>
+            // function([string1, string2],target id,[color1,color2])
+            consoleText(
+                [
+                    /* "Munaf.", */
+                    "UI/UX Designer.",
+                    "Product Designer.",
+                    "Web Developer.",
+                    "Visual Designer.",
+                    "Brand Designer.",
+                ],
+                "text",
+                [
+                    /* "white", */ "#fe9a3a",
+                    "#fe9a3a",
+                    "#fe9a3a",
+                    "#fe9a3a",
+                    "#fe9a3a",
+                ]
+            );
+
+            function consoleText(words, id, colors) {
+                /* console.log(words.length);
+                if (words.length > 6) {
+                    document.getElementById("intro1").style.display = "none";
+                    document.getElementById("intro2").style.display =
+                        "inline-block";
+                } else {
+                    document.getElementById("intro2").style.display = "none";
+                    document.getElementById("intro1").style.display =
+                        "inline-block";
+                } */
+
+                if (colors === undefined) colors = ["#fff"];
+                var visible = true;
+                var con = document.getElementById("console");
+                var letterCount = 1;
+                var x = 1;
+                var waiting = false;
+                var target = document.getElementById(id);
+                target.setAttribute("style", "color:" + colors[0]);
+                window.setInterval(function () {
+                    if (letterCount === 0 && waiting === false) {
+                        waiting = true;
+                        target.innerHTML = words[0].substring(0, letterCount);
+                        window.setTimeout(function () {
+                            var usedColor = colors.shift();
+                            colors.push(usedColor);
+                            var usedWord = words.shift();
+                            words.push(usedWord);
+                            x = 1;
+                            target.setAttribute("style", "color:" + colors[0]);
+                            letterCount += x;
+                            waiting = false;
+                        }, 1000);
+                    } else if (
+                        letterCount === words[0].length + 1 &&
+                        waiting === false
+                    ) {
+                        waiting = true;
+                        window.setTimeout(function () {
+                            x = -1;
+                            letterCount += x;
+                            waiting = false;
+                        }, 1000);
+                    } else if (waiting === false) {
+                        target.innerHTML = words[0].substring(0, letterCount);
+                        letterCount += x;
+                    }
+                }, 120);
+                window.setInterval(function () {
+                    if (visible === true) {
+                        con.className = "console-underscore hidden";
+                        visible = false;
+                    } else {
+                        con.className = "console-underscore";
+
+                        visible = true;
+                    }
+                }, 400);
+            }
+        </script>
+    </body>
+</html>
